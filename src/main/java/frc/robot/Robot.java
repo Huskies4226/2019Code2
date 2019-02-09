@@ -155,15 +155,15 @@ public class Robot extends IterativeRobot {
 
 
       //Limelight Autolineup
-      while(leftStick.getRawButtonPressed(2) && x<-0.5);
+      while(leftStick.getRawButtonPressed(2)==1 && x<-0.5);
       {
           drivetrain.tankDrive(0,0.5);
       }
-      while(leftStick.getRawButtonPressed(2) && x>0.5);
+      while(leftStick.getRawButtonPressed(2)==1 && x>0.5);
         {
           drivetrain.tankDrive(0.5,0);
         }
-      while(leftStick.getRawButtonPressed(2) && x>-0.5 && x<0.5 && area<13);
+      while(leftStick.getRawButtonPressed(2)==1 && x>-0.5 && x<0.5 && area<13);
       {
         drivetrain.tankDrive(0.5,0.5);
       }
